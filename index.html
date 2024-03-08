@@ -12,22 +12,28 @@
 </head>
 <div class="weather-app"
 <body>
-    
     <header>
-        <form > 
-            <input type = "search" placeholder="Enter city..."/>
-            <input type ="submit" value="search"/>
+        <form class ="search-form"> 
+            <input type="search" placeholder="Enter a city.." required="" class="search-input" id="search-input"> 
+            <input type="submit" value="Search" class="search-button">
         </form>
     </header>
     <main>
+        <div class="weather-app-data">
         <div>
-   <h1>Johannesburg</h1> 
-   <P >Tuesday 14:114,scatterd clouds
+   <h1 class="weather-app-city">Johannesburg</h1> 
+   <P class="weather-app-details">Tuesday 14:114,scatterd clouds
     </br>
-    Humidity: 50%, Wind 5,2Km/h
+    Humidity: <strong>50%</strong>, Wind <strong>5,2Km/h</strong>
 </div>
+
     </P>
-    <div>  🌤️16°C</div>
+    <div class="weather-app-temperature-container">
+    <div class="weather-app-temperature-icon">  🌤️</div>
+    <div class="weather-app-temperature">16</div>
+    <div class="weather-app-temperature-unit">°C</div>
+
+    </div>
 </main>
    <footer>Coded by 
     <a href="https://github.com/NdivhuwoLiginya" target="_blank">Ndivhuwo Liginya,</a> 
