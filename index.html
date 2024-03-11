@@ -4,43 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="src/styles.css">
-<title>Weather-App</title>
-     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>Weather-App</title>
 </head>
-<div class="weather-app"
 <body>
-    <header>
-        <form class ="search-form"> 
-            <input type="search" placeholder="Enter a city.." required="" class="search-input" id="search-input"> 
-            <input type="submit" value="Search" class="search-button">
-        </form>
-    </header>
-    <main>
-        <div class="weather-app-data">
-        <div>
-   <h1 class="weather-app-city">Johannesburg</h1> 
-   <P class="weather-app-details">Tuesday 14:114,scatterd clouds
-    </br>
-    Humidity: <strong>50%</strong>, Wind <strong>5,2Km/h</strong>
-</div>
-
-    </P>
-    <div class="weather-app-temperature-container">
-    <div class="weather-app-temperature-icon">  🌤️</div>
-    <div class="weather-app-temperature">16</div>
-    <div class="weather-app-temperature-unit">°C</div>
-
+    <div class="weather-app">
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Enter a city.." required id="search-form-input" class="search-form-input"> 
+                <input type="submit" value="Search" class="search-button">
+            </form>
+        </header>
+        <main>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city" id="city">Johannesburg</h1> 
+                    <p class="weather-app-details">Tuesday 14:114, scattered clouds<br>Humidity: <strong>50%</strong>, Wind <strong>5.2 Km/h</strong></p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div class="weather-app-temperature-icon">🌤️</div>
+                    <div class="weather-app-temperature">16</div>
+                    <div class="weather-app-temperature-unit">°C</div>
+                </div>
+            </div>
+        </main>
+        <footer>Coded by 
+            <a href="https://github.com/NdivhuwoLiginya" target="_blank">Ndivhuwo Liginya</a>, 
+            is open-sourced on 
+            <a href="https://github.com/" target="_blank">Github</a> and hosted on 
+            <a href="https://ndivhuwo-l.netlify.app/" target="_blank">Netlify</a>
+        </footer>
     </div>
-</main>
-   <footer>Coded by 
-    <a href="https://github.com/NdivhuwoLiginya" target="_blank">Ndivhuwo Liginya,</a> 
-    is open-sourced on 
-    <a href="https://github.com/" target="_blank">Github</a> and hosted on 
-    <a href="https://ndivhuwo-l.netlify.app/" target="_blank">Netlify</a>
-    </footer>
+    <script src="src/index.js"></script>
 </body>
-</div>
 </html>
